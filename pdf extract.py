@@ -74,9 +74,9 @@ from openpyxl import load_workbook
 
 # creeëren van twee mappen, voor pdf en csv
 # C:\\Users\\Remy Hertogs\\Documents\\Python Scripts\\Machine Learning\\PDF extract\\pdf\\
-pdf_folder = 'Z:\\Rapporten\\Annemie\\Dhr Breug\\'
-csv_folder = 'C:\\Users\\Remy Hertogs\\Documents\\Python Scripts\\Machine Learning\\PDF extract\\csv\\'         # niet nodig
-xlsx_folder = 'C:\\Users\\Remy Hertogs\\Documents\\Python Scripts\\Machine Learning\\PDF extract\\xlsx\\'       # doelmap voor excel bestanden
+pdf_folder = ''
+csv_folder = 'path\\to\\PDF extract\\csv\\'         # niet nodig
+xlsx_folder = 'path\\to\\PDF extract\\xlsx\\'       # doelmap voor excel bestanden
     
 paths = [pdf_folder + fn for fn in os.listdir(pdf_folder) if fn.endswith('.pdf')]    
 
