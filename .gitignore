@@ -1,0 +1,5 @@
+*.pyc
+*~
+__pychache__
+git_env
+_Archief

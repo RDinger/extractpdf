@@ -1,0 +1,42 @@
+Beschrijving bestanden in map pdf extract
+
+	6-6-17
+map Lit								map
+map _Archief							map
+META_Peters-Scheffers-2011.pdf					meta-analyse
+pdf extract.py							python script extractie
+Test.docx							Geconverteerde pdf (Test.pdf) naar docx
+Test.pdf							Onderzoekspaper voor testen extractie
+
+6-6-17
+Verschillende packages geprobeerd met python. Probleem: Veel verschillende packages, die niet allemaal even goed 
+werken of gedocumenteerd zijn. 
+
+PyPDF2:	Lijkt alleen tekst te kunnen minen, mergen en roteren. En goed om metadata te extracten
+https://pythonhosted.org/PyPDF2/index.html
+Lijkt niet geschikt voor tabellen.
+
+Tabula.py: De plugin voor python van Tabula (zie hieronder voor stand alone programma). Nadeel: Je moet de tabellen
+localiseren met coördinaten??
+Geeft foutmelding: Error tokenizing data. C error: Expected 2 fields in line 223, saw 4. Te maken met seperator.
+https://github.com/chezou/tabula-py/issues/12
+
+7-6-17: Test.pdf geeft foutmelding. pdf van Peters-Scheffers (2011) wordt wel extract.
+Instabiel resultaat. Bij parameter "pages= 'all'" lijkt het niet te werken, doordat er meerdere tabellen zijn.
+Bekend bij andere gebruikers. Indien pages= specifiek pagina nr, lijkt het wel te werken.
+
+
+
+
+uitproberen:	Tabula -> zowel in R als in python beschikbaar, maar ook als standalone programma 
+		(webbased, via localhost:8888)
+
+16-10-17:
+Tabellen extracten vanuit PDF met Tabula levert hetzelfde resultaat op in zowel Python als R.
+Zelfde fouten, zelfde zaken worden weggelaten, zelfde opbouw van tabellen.
+Wel heb ik het idee dat encoding problemen in R niet voorkomen, rare tekens worden meegenome (maar zorgt
+ervoor dat de tekst soms onleesbaar wordt).
+
+
+
+
