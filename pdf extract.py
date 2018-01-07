@@ -16,7 +16,7 @@ import tabula
 import os
 import pandas as pd
 
-folder = "C:\\Users\\Remy Hertogs\\Documents\\Python Scripts\\Machine Learning\\PDF extract\\pdf\\Vachon - 2014.pdf"
+folder = "path\\to\\PDF extract\\pdf\\Vachon - 2014.pdf"
 paths = [folder + fn for fn in os.listdir(folder) if fn.endswith('.pdf')]
 for path in paths:
     df = tabula.read_pdf(path, encoding = 'latin1', pages = 8, nospreadsheet = True, multiple_tables=True)
@@ -38,8 +38,8 @@ import os
 import pandas as pd
 
 # creeëren van twee mappen, voor pdf en csv
-pdf_folder = 'C:\\Users\\Remy Hertogs\\Documents\\Python Scripts\\Machine Learning\\PDF extract\\pdf\\'
-csv_folder = 'C:\\Users\\Remy Hertogs\\Documents\\Python Scripts\\Machine Learning\\PDF extract\\csv\\'
+pdf_folder = 'path\\to\\PDF extract\\pdf\\'
+csv_folder = 'path\\to\\PDF extract\\csv\\'
 
 # pad instellen waarmee alle bestanden in pdf folder worden gezocht.
 paths = [pdf_folder + fn for fn in os.listdir(pdf_folder) if fn.endswith('.pdf')]
@@ -73,7 +73,7 @@ import pandas as pd
 from openpyxl import load_workbook
 
 # creeëren van twee mappen, voor pdf en csv
-# C:\\Users\\Remy Hertogs\\Documents\\Python Scripts\\Machine Learning\\PDF extract\\pdf\\
+# path\\to\\PDF extract\\pdf\\
 pdf_folder = ''
 csv_folder = 'path\\to\\PDF extract\\csv\\'         # niet nodig
 xlsx_folder = 'path\\to\\PDF extract\\xlsx\\'       # doelmap voor excel bestanden
